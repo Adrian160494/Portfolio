@@ -19,6 +19,7 @@ app.controller('baseCtrl',function ($scope, $http, $interval) {
             console.log($scope.likes);
             $scope.likes1 = $scope.likes[0];
             $scope.likes2 = $scope.likes[1];
+            $scope.likes3 = $scope.likes[2];
         })
     };
 

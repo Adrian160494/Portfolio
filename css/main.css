@@ -1,131 +1,254 @@
-body{
-    width: 100%;
-    height: 100%;
-    margin:auto;
-    font-family: 'Sansita One', cursive;
-}
+@import url(https://fonts.googleapis.com/css?family=Black+Ops+One|Bungee+Inline|Cabin+Sketch|Leckerli+One);
+@import url(https://fonts.googleapis.com/css?family=Baloo+Chettan);
+@import url(https://fonts.googleapis.com/css?family=Stalinist+One);
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker|Ribeye+Marrow);
+@import url(https://fonts.googleapis.com/css?family=Chewy|Nosifer);
 
+
+body{
+    width: 90%;
+    height: 100%;
+    font-family: 'Cabin Sketch', cursive;
+}
 @media screen and (max-width: 400px){
-    body{
-        width: 400px;
+	
+	.containerWrap{
+		background: -webkit-linear-gradient(left,grey,white,white,white,grey) !important;
+	}
+	
+	.contactInfo>p{
+	color:black !important;
+	}
+	#banner1{
+		display:none;
+	}
+    #circle1, #circle2, #circle3, #circle4, #circle5, #circle6, #circle7, #circle8, #circle9, #circle10, #circle11, #circle12 {
+        display: block !important;
+    }
+    .about, .skills, .projects, .contacts{
+        padding: 0 0;
+    }
+    .banner{
     }
     #heading1{
-        color: white;
+        color: black;
+        font-size: 45px;
     }
-
+    .myPanel>p {
+        text-align: justify;
+        padding:0 10px !important;
+        font-size:18px !important;
+    }
+    #myIMG{
+        width:200px;
+    }
+	
+	.navigationAlt{
+	width: 62% !important;
+	}
     .big-button{
-        height: 100px;
-        width: 200px;
-        font-size: 15px;
+        height: 130px;
+        width: 250px;
+        font-size: 20px;
     }
     .project{
         width:250px;
         height: 250px;
         margin-bottom: 10px;
     }
-    #learn{
-        width: 8%;
-        padding:0;
-    }
-
-    #front{
-        width: 10%;
-    }
-
-    #and{
-        width: 8%;
-    }
-
-    #back{
-        width: 10%;
-    }
-
     .download{
         margin-top:30px;
         margin-bottom: 50px;
+        position: relative;
+        z-index: 1000;
     }
-
     #navbar{
         display:none;
     }
-
+    .navigationAlt>ul>li>a{
+        font-size:20px;
+    }
     .myPanel{
         font-size:15px;
         text-align: justify;
-        color: white;
-
+        color:black;
     }
-
+    .mobileBar{
+        display: block;
+    }
     .contactInfo{
         font-size: 15px;
     }
-
     .copyright{
         display: none;
     }
-
     #mobile{
         display: block;
     }
-
-    .big-button{
-        height: 130px;
-        width: 250px;
-        font-size: 20px;
-    }
-
     #imgProject1{
-        background-image: url('../img/BMI.png');
+        background-image: url('../img/bmi.png');
         position: absolute;
         left:15%;
+        z-index: 100;
     }
-
     #imgProject2{
         background-image: url('../img/shopbox.png');
         position: absolute;
         top:400px;
         left:15%;
+        z-index:100;
     }
-
+    #imgProject3{
+        background-image: url('../img/forum.png');
+        position: absolute;
+        top:700px;
+        left:15%;
+        z-index:100;
+    }
     .projects{
-        height:700px;
+        height:900px;
     }
-
     .bannerText{
+        font-size:20px;
+        top: 50px;
+        margin:20px 20px;
+        display:none;
+    }
+    .barText{
+        font-size: 10px;
+        top:10px;
+        margin:0 100px;
+        position: absolute;
+    }
+    .photo{
+        display:none;
+    }
+    .arrowDown{
+        display: none;
+    }
+    .footer{
         font-size:15px;
-        top: 5%;
-        left: 10%;
+		margin-top:30px;
+    }
+    .skillContainer{
+        height:2200px;
+        width:100%;
+    }
+    .info{
+        height: 300px;
+    }
+    #infoBmi{
+        position: absolute;
+        width:100%;
+        left:0;
+        top:360px;
+        z-index: 1300;
+        padding:10px;
+        display: none;
+    }
+    #infoShop{
+        position: absolute;
+        left:0;
+        top:20px;
+        width:100%;
+        z-index: 1000;
+        padding:10px;
+        display: none;
+    }
+    #infoForum{
+        position: absolute;
+        left:0%;
+        top:420px;
+        height:300px;
+        width:100%;
+        z-index: 1000;
+        padding:10px;
+        display: none;
+    }
+    .info{
+        height: 400px;
+    }
+    .infoP{
+        font-size:15px;
+    }
+    .skill{
+        padding: 0;
+    }
+    .skillContainer{
+        padding:0;
+    }
+    .button {
+        margin-top:20px;
+        width: 50px;
+        height: 50px;
+    }
+    .icon {
+        top: calc(50% - 13px);
+        left: 4%;
+        font-size:25px;
+    }
+    .button:hover {
+        width: 150px;
+        height:70px;
     }
 }
-
-@media screen and (min-width: 401px) and (max-width: 768px){
-
-    .about, .skills, .projects, .contacts{
-        padding: 0 50px;
+@media screen and (min-width: 401px) and (max-width: 530px){
+    .barText{
+        font-size: 12px;
+        top:20px;
+        margin: 0 100px;
+        position: absolute;
     }
-
+}
+@media screen and (min-width: 531px) and (max-width: 768px){
+    .barText{
+        width:100%;
+        font-size: 15px;
+        top:20px;
+        position: absolute;
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 768px){
+    #circle1, #circle2, #circle3, #circle4, #circle5, #circle6, #circle7, #circle8, #circle9, #circle10, #circle11, #circle12 {
+        display: block !important;
+    }
+    .navigationAlt>ul>li>a{
+        font-size:24px;
+    }
+	
+	#banner1{
+		display:none;
+	}
+	
+    .photo>p{
+        font-size:15px;
+    }
+	.navigationAlt{
+	width: 62% !important;
+	}
+    .about, .skills, .projects, .contacts{
+        padding: 0 10px;
+    }
+    #myIMG{
+        width:200px;
+    }
+    .mobileBar{
+        display: block;
+    }
+    .myPanel>p {
+        text-align: justify;
+        padding: 0 10px !important;
+        font-size:18px !important;
+    }
+    .banner{
+        height:100%;
+    }
     .project{
         width: 300px;
         height:300px;
     }
     #heading1{
-        color: white;
-    }
-
-    #learn{
-        width: 13%;
-    }
-
-    #front{
-        width: 15%;
-    }
-
-    #and{
-        width: 8%;
-    }
-
-    #back{
-        width: 15%;
+        color: black;
     }
     #navbar{
         display:none;
@@ -133,7 +256,7 @@ body{
     .myPanel{
         font-size: 20px;
         text-align: justify;
-        color: rgba(250,250,250,1);
+        color: black;
     }
     .contactInfo{
         font-size: 15px;
@@ -146,66 +269,160 @@ body{
         width: 250px;
         font-size: 20px;
     }
-
     #imgProject1{
-        background-image: url('../img/BMI.png');
+        background-image: url('../img/bmi.png');
         position: relative;
         margin: auto;
+        z-index: 1000;
     }
-
     #imgProject2{
         background-image: url('../img/shopbox.png');
         position: relative;
         margin: 10px auto;
-
+        z-index: 1000;
+    }
+    #imgProject3{
+        background-image: url('../img/forum.png');
+        position: relative;
+        margin: 10px auto;
+        z-index: 1000;
     }
 
     .hover{
         left: 40px;
     }
-
     #mobile{
         display: block;
     }
-
     .bannerText{
-        font-size:26px;
-        top: 7%;
-        left: 6%;
+        margin:0 100px;
+        top: 30px;
+        display: none;
     }
-
+    .photo{
+        text-align: justify;
+        position: absolute;
+        top: 100px;
+        width:auto;
+        font-size: 15px;
+        color: black;
+        background-color: rgba(250,250,250,0.9);
+        margin: 0 30px;
+        -webkit-box-shadow: 0 0px 100px 10px white;
+        -moz-box-shadow: 0 0px 100px 10px white;
+        box-shadow: 0 0px 100px 10px white;
+    }
+    .arrowDown{
+        display: none;
+    }
+    .download{
+        position: relative;
+        z-index: 1000;
+    }
+    .footer{
+        font-size:20px;
+		margin-top:30px;
+    }
+    .skillContainer{
+        height:2200px;
+        width:100%;
+    }
+    .info{
+        height: 300px;
+    }
+    #infoBmi{
+        position: absolute;
+        width:100%;
+        left:0;
+        height:400px;
+        top:380px;
+        z-index: 1300;
+        padding:10px;
+        display: none;
+    }
+    #infoShop{
+        position: absolute;
+        left:0;
+        top:110px;
+        width:100%;
+        height:300px;
+        z-index: 1000;
+        padding:10px;
+        display: none;
+    }
+    #infoForum{
+        position: absolute;
+        left:0%;
+        top:410px;
+        height:300px;
+        width:100%;
+        z-index: 1000;
+        padding:10px;
+        display: none;
+    }
+    .info{
+        height: 400px;
+    }
+    .infoP{
+        font-size:15px;
+    }
+    .skill{
+        padding: 0;
+    }
+    .skillContainer{
+        padding:0;
+    }
+    .button {
+        margin-top:20px;
+        width: 50px;
+        height: 50px;
+    }
+    .icon {
+        top: calc(60% - 16px);
+        left: 4%;
+        font-size:25px;
+    }
+    .button:hover {
+        width: 150px;
+        height:70px;
+    }
 }
-
+@media screen and (min-width: 401px) and (max-width: 599px){
+    .bannerText{
+        font-size:15px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 768px){
+    .bannerText{
+        font-size:20px;
+    }
+}
 @media screen and (min-width: 769px) and (max-width: 1100px){
-
+    #navbar>ul>li>a{
+        font-size:20px;
+    }
+	#banner2{
+		display:none;
+	}
+    .hover{
+        left: 45px;
+    }
     .about, .skills, .projects, .contacts{
         padding: 0 90px;
     }
-
+    .mobileBar{
+        display: none;
+    }
+    .banner{
+        height:100%;
+    }
     .project{
         width: 300px;
         height:300px;
     }
-
-    #learn{
-        width: 11%;
-    }
-
-    #front{
-        width: 15%;
-    }
-
-    #and{
-        width: 8%;
-    }
-
-    #back{
-        width: 15%;
-    }
     #welcomeText{
         top: 50px;
     }
-
     .myPanel{
         font-size:25px;
         text-align: justify;
@@ -215,73 +432,151 @@ body{
         width: 270px;
         font-size: 26px;
     }
-
     #imgProject1{
-        background-image: url('../img/BMI.png');
+        background-image: url('../img/bmi.png');
         position: relative;
         left:0;
     }
-
     #imgProject2{
         background-image: url('../img/shopbox.png');
         position: absolute;
         right:80px;
     }
-
-    .projects{
-        height: 400px;
+    #imgProject3{
+        background-image: url('../img/forum.png');
+        position: absolute;
+        right: calc(50% - 150px);
+        top:400px;
     }
-
+    .projects{
+        height: 700px;
+    }
     #mobile{
         display: none;
     }
-
-    .download{
-        margin-top:120px;
-    }
     .big-button{
-
         height: 130px;
         width: 250px;
         font-size: 20px;
     }
-
     .bannerText{
         font-size:40px;
-        top: 15%;
-        left: 4%;
+        top: 100px;
+        margin: 0 20px;
+    }
+    .photo{
+        position: absolute;
+        text-align: justify;
+        top: 300px;
+        width:370px;
+        font-size: 18px;
+        color: white;
+        left: calc(43% + 100px);
+    }
+    .arrowDown{
+        font-size: 110px;
+        color:white;
+        position: absolute;
+        top: 300px;
+        left: calc(30% - 60px);
+        -webkit-animation: animationHand;
+        -o-animation: animationHand;
+        animation: animationHand;
+        animation-iteration-count: infinite;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        -o-animation-duration: 1s;
+        animation-duration: 1s;
+    }
+    @keyframes animationHand {
+        0% {top: 320px}
+        10% {top: 325px}
+        20% {top: 330px}
+        30% {top: 335px}
+        40% {top: 340px}
+        50% {top: 345px}
+        60% {top: 340px}
+        70% {top: 335px}
+        80% {top: 330px}
+        90% {top: 325px}
+        100% {top: 320px}
+    }
+    .footer{
+        font-size:20px;
+    }
+    .skillContainer{
+        height:1100px;
+        width:100%;
+    }
+    #infoBmi{
+        position: absolute;
+        width:55%;
+        left:42%;
+        top:105px;
+        z-index: 1000;
+        padding:10px;
+        display: none;
+    }
+    #infoShop{
+        position: absolute;
+        left:9%;
+        top:105px;
+        width:55%;
+        z-index: 1000;
+        padding:10px;
+        display: none;
+    }
+    #infoForum{
+        position: absolute;
+        left:20%;
+        top:120px;
+        width:60%;
+        z-index: 1000;
+        padding:10px;
+        display: none;
+    }
+    .info{
+        height: 300px;
+        width:350px;
+    }
+    .infoP{
+        font-size:15px;
+    }
+    .button {
+        width: 100px;
+        height: 100px;
+        margin-top:20px;
+    }
+    .icon {
+        top: calc(50% - 30px);
+        left: 2%;
+        font-size:50px;
+    }
+    .button:hover {
+        width: 300px;
+        height:120px;
     }
 }
-
 @media screen and (min-width: 1100px) {
-
     .about, .skills, .projects, .contacts{
         padding: 0 130px;
+    }
+    .banner{
+        height:100%;
+    }
+	#banner2{
+		display:none;
+	}
+    .mobileBar{
+        display: none;
     }
     .project{
         width: 350px;
         height:350px;
     }
-
-    #learn{
-        width: 11%;
-    }
-
-    #front{
-        width: 15%;
-    }
-
-    #and{
-        width: 8%;
-    }
-
-    #back{
-        width: 15%;
-    }
     #welcomeText{
         top: 100px;
     }
-
     .myPanel{
         font-size:25px;
     }
@@ -290,138 +585,498 @@ body{
         width: 270px;
         font-size: 26px;
     }
-
     #imgProject1{
-        background-image: url('../img/BMI.png');
+        background-image: url('../img/bmi.png');
         position: absolute;
         left: 14%;
     }
-
     #imgProject2{
         background-image: url('../img/shopbox.png');
         position: absolute;
         right: 14%;
     }
-
-    .projects{
-        height: 400px;
+    #imgProject3{
+        background-image: url('../img/forum.png');
+        position: absolute;
+        right: calc(50% - 180px);
+        top:500px;
     }
-
+    .projects{
+        height: 800px;
+    }
     .hover{
         left: 65px;
     }
-
     #mobile{
         display: none;
     }
-    .download{
-        margin-top:120px;
-    }
-
     .bannerText{
-        font-size:60px;
-        top: 20%;
+        font-size:50px;
+        margin: 0 200px;
+        top: 100px;
+    }
+    .photo{
+        position: absolute;
+        text-align: justify;
+        width:600px;
+        color: white;
+    }
+    .arrowDown{
+        font-size: 120px;
+        color:white;
+        position: absolute;
+        left: calc(50% - 60px);
+        -webkit-animation: animationHand;
+        -o-animation: animationHand;
+        animation: animationHand;
+        animation-iteration-count: infinite;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        -o-animation-duration: 1s;
+        animation-duration: 1s;
+    }
+    .footer{
+        font-size:20px;
+    }
+    .skillContainer{
+        height:1100px;
+        width:100%;
+    }
+    #infoBmi{
+        position: absolute;
+        width:50%;
+        left:36%;
+        top:120px;
+        z-index: 1000;
+        padding:10px;
+        display: none;
+    }
+    #infoShop{
+        position: absolute;
+        left:1%;
+        top:120px;
+        width:50%;
+        z-index: 1000;
+        padding:10px;
+        display: none;
+    }
+    #infoForum{
+        position: absolute;
+        left:20%;
+        top:240px;
+        width:50%;
+        z-index: 1000;
+        padding:10px;
+        display: none;
+    }
+    .info{
+        height: 300px;
+    }
+    .infoP{
+        font-size:15px;
+    }
+    .button {
+        width: 100px;
+        height: 100px;
+    }
+    .icon {
+        top: calc(50% - 30px);
         left: 2%;
+        font-size:50px;
+    }
+    .button:hover {
+        width: 300px;
+        height:120px;
     }
 }
-
-.navigationContainer{
+@media screen and (min-width: 1100px) and (max-width: 1299px){
+    .banner{
+        height:100%;
+    }
+    .mobileBar{
+        display: none;
+    }
+	#banner2{
+		display:none;
+	}
+    .photo{
+        position: absolute;
+        text-align: justify;
+        top: 400px;
+        width:600px;
+        font-size: 25px;
+        color: white;
+        left: calc(35% + 100px);
+    }
+    .arrowDown{
+        font-size: 120px;
+        color:white;
+        position: absolute;
+        top: 450px;
+        left: calc(20% - 60px);
+        animation: animationHand;
+        animation-iteration-count: infinite;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        -o-animation-duration: 1s;
+        animation-duration: 1s;
+    }
+    @keyframes animationHand {
+        0% {top: 410px}
+        10% {top: 415px}
+        20% {top: 420px}
+        30% {top: 425px}
+        40% {top: 430px}
+        50% {top: 435px}
+        60% {top: 430px}
+        70% {top: 425px}
+        80% {top: 420px}
+        90% {top: 415px}
+        100% {top: 410px}
+    }
+    .footer{
+        font-size:20px;
+    }
+    .skillContainer{
+        height:1100px;
+        width:100%;
+    }
+    #infoBmi{
+        position: absolute;
+        width:50%;
+        left:42%;
+        top:105px;
+        z-index: 1000;
+        padding:10px;
+        display: none;
+    }
+    #infoShop{
+        position: absolute;
+        left:8%;
+        top:105px;
+        width:50%;
+        z-index: 1000;
+        padding:10px;
+        display: none;
+    }
+    #infoForum{
+        position: absolute;
+        left:25%;
+        top:170px;
+        width:50%;
+        z-index: 1000;
+        padding:10px;
+        display: none;
+    }
+    .info{
+        height: 350px;
+    }
+    .infoP{
+        font-size:17px;
+    }
+    .button {
+        width: 100px;
+        height: 100px;
+    }
+    .icon {
+        top: calc(50% - 30px);
+        left: 2%;
+        font-size:50px;
+    }
+    .button:hover {
+        width: 300px;
+        height:120px;
+    }
+}
+@media screen and (min-width: 1300px) and (max-width: 1500px){
+    .banner{
+        height:100%;
+    }
+	#banner2{
+		display:none;
+	}
+    .photo{
+        position: absolute;
+        text-align: justify;
+        top: 400px;
+        width:600px;
+        font-size: 25px;
+        color: white;
+        left: calc(45% + 100px);
+    }
+    .mobileBar{
+        display: none;
+    }
+    .arrowDown{
+        font-size: 120px;
+        color:white;
+        position: absolute;
+        top: 70%;
+        left: calc(50% - 60px);
+        -webkit-animation: animationHand;
+        -o-animation: animationHand;
+        animation: animationHand;
+        animation-iteration-count: infinite;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        -o-animation-duration: 1s;
+        animation-duration: 1s;
+    }
+    @keyframes animationHand {
+        0% {top: 550px}
+        10% {top: 555px}
+        20% {top: 560px}
+        30% {top: 565px}
+        40% {top: 570px}
+        50% {top: 575px}
+        60% {top: 570px}
+        70% {top: 565px}
+        80% {top: 560px}
+        90% {top: 555px}
+        100% {top: 550px}
+    }
+    .footer{
+        font-size:20px;
+    }
+    .skillContainer{
+        height:1100px;
+        width:100%;
+    }
+    #infoBmi{
+        position: absolute;
+        width:50%;
+        left:39%;
+        top:105px;
+        z-index: 1000;
+        padding:10px;
+        display: none;
+    }
+    #infoShop{
+        position: absolute;
+        left:11%;
+        top:105px;
+        width:50%;
+        z-index: 1000;
+        padding:10px;
+        display: none;
+    }
+    #infoForum{
+        position: absolute;
+        left:20%;
+        top:170px;
+        width:60%;
+        z-index: 1000;
+        padding:10px;
+        display: none;
+    }
+    .info{
+        height: 350px;
+    }
+    .infoP{
+        font-size:20px;
+    }
+    .button {
+        width: 100px;
+        height: 100px;
+    }
+    .icon {
+        top: calc(50% - 30px);
+        left: 2%;
+        font-size:50px;
+    }
+    .button:hover {
+        width: 300px;
+        height:120px;
+    }
+}
+@media screen and (min-width: 1501px){
+    .photo{
+        position: absolute;
+        text-align: justify;
+        top: 400px;
+        width:600px;
+        font-size: 30px;
+        color: white;
+        left: calc(45% + 100px);
+    }
+	#banner2{
+		display:none;
+	}
+    .arrowDown{
+        font-size: 120px;
+        color:white;
+        position: absolute;
+        top: 650px;
+        left: calc(50% - 60px);
+        -webkit-animation: animationHand;
+        -o-animation: animationHand;
+        animation: animationHand;
+        animation-iteration-count: infinite;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        -o-animation-duration: 1s;
+        animation-duration: 1s;
+    }
+    @keyframes animationHand {
+        0% {top: 650px}
+        10% {top: 655px}
+        20% {top: 660px}
+        30% {top: 665px}
+        40% {top: 670px}
+        50% {top: 675px}
+        60% {top: 670px}
+        70% {top: 665px}
+        80% {top: 660px}
+        90% {top: 655px}
+        100% {top: 650px}
+    }
+    .mobileBar{
+        display: none;
+    }
+    .footer{
+        font-size:20px;
+    }
+    .skillContainer{
+        height:1100px;
+        width:100%;
+    }
+    #infoBmi{
+        position: absolute;
+        width:60%;
+        left:36%;
+        top:105px;
+        z-index: 1000;
+        padding:10px;
+        display: none;
+    }
+    #infoShop{
+        position: absolute;
+        left:4%;
+        top:105px;
+        width:60%;
+        z-index: 1000;
+        padding:10px;
+        display: none;
+    }
+    #infoForum{
+        position: absolute;
+        left:20%;
+        top:170px;
+        width:60%;
+        z-index: 1000;
+        padding:10px;
+        display: none;
+    }
+    .info{
+        height: 350px;
+    }
+    .infoP{
+        font-size:20px;
+    }
+    .button {
+        width: 100px;
+        height: 100px;
+    }
+    .icon {
+        top: calc(50% - 30px);
+        left: 2%;
+        font-size:50px;
+    }
+    .button:hover {
+        width: 300px;
+        height:120px;
+    }
+}
+.navigationContainer, #navigation{
+    z-index: 1000;
 }
 
+.banner{
+    margin-bottom:80px;
+}
 .containerWrap{
+    width:100%;
     border-top:2px solid white;
-    padding-top:10%;
     position: absolute;
-    background: url('../img/background3.jpg');
+    background: -webkit-linear-gradient(left,black,grey,white,white,white,grey,black);
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.about{
+    color: black;
+    font-size:30px;
+    position: relative;
+    font-family: 'Pangolin', cursive;
+}
+.skills{
+    position: relative;
+    margin-bottom: 60px;
+    padding: 0 auto;
+}
+.skillWrapper{
+    position: relative;
+}
+.projects{
+    position: relative;
+    margin-top:20px;
+    margin-bottom: 60px;
+}
+.contacts{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
 .footer{
-    font-family: 'Nosifer', cursive;
-    height: 120px;
+    font-family: 'Baloo Chettan', cursive;
     width:100%;
+	height:120px;
     position: relative;
-    background: -webkit-linear-gradient(rgba(7,33,60,0.2),rgba(7,33,60,0.6),rgba(7,33,60,0.6),rgba(7,33,60,0.8),rgba(7,33,60,0.8),rgba(7,33,60,1));
+    background: rgba(100,100,100,0.2);
+	z-index:1;
 }
-
-.wrapper{
-    width:100%;
-    height:100%;
-    position: relative;
-    margin-right:auto;
-    margin-left:auto;
-}
-
 #navigation {
-    position: absolute;
+    position: fixed;
     top:0;
-    z-index: 1;
+    width:100%;
+    z-index: 6000;
 }
-
-.header{
+#navbar{
+    position: fixed;
+    z-index: 2000;
+    width:100%;
 }
-
 #welcomeText{
     color: #761c19;
     width: 100%;
     font-family: 'Chewy', cursive;
 }
-
-.photo{
-    background: -webkit-linear-gradient(rgba(100,100,100,1),rgba(100,100,100,0.8),rgba(100,100,100,0.6),rgba(100,100,100,0.4),rgba(100,100,100,0.2),rgba(100,100,100,0));
-}
-
-#learn{
-    display: none;
-}
-
-#front{
-    display: none;
-}
-
-#and{
-    display: none;
-}
-
-#back{
-    display: none;
-}
-.banner{
-
-}
-
-.about{
-    color: black;
-    font-size:30px;
-}
-
 #getCV{
+    -webkit-animation: animateText;
+    -o-animation: animateText;
     animation: animateText;
     animation-iteration-count: infinite;
     animation-duration: 3s;
     transition: 2s size;
 }
-
-.skills{
-    margin: 5px 0;
-}
-
 .project{
     background-size: cover;
     box-sizing: border-box;
+    margin-top:20px;
     z-index: 0;
     opacity: 0.9;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
     border-radius: 30px;
 }
-
 .project:hover {
     background-color: rgba(10, 10, 10, 0.6);
     opacity: 0.7;
     z-index: 1;
     border: 12px solid rgba(250, 250, 250, 1);
+    -webkit-box-shadow: 0px 20px 100px 5px brown;
+    -moz-box-shadow: 0px 20px 100px 5px brown;
+    box-shadow: 0px 20px 100px 5px brown;
 }
-
 .hover {
     background-color: rgba(20,20,20,0.9);
     -webkit-border-radius: 10px;
@@ -434,7 +1089,6 @@ body{
     top: 45%;
     z-index: 2;
 }
-
 .show{
     border:2px solid white;
     -webkit-border-radius: 5px;
@@ -445,41 +1099,23 @@ body{
     float:left;
     margin: 0 10px;
 }
-.skill{
-    margin-bottom:20px;
+.skillCircle{
+    font-family: 'Cabin Sketch', cursive;
 }
-
-.contact{
-}
-
 a{
-    font-size: 30px;
+    font-size: 23px;
     font-family: 'Permanent Marker', cursive;
     color:white;
 }
-
 #arrow{
     cursor: pointer;
 }
-
 #arrow:hover{
     width: 12%;
 }
-
-#informations{
-}
-
-
-.about{
-    font-family: 'Pangolin', cursive;
-}
-
 .myPanel{
     padding:10px;
 }
-
-
-
 #instagram:hover{
     opacity: 0.7;
     cursor: pointer;
@@ -492,42 +1128,9 @@ a{
     opacity: 0.7;
     cursor: pointer;
 }
-
 label{
     font-size:20px;
     color: black;
-}
-
-.big-button {
-    position: relative;
-    background: -webkit-radial-gradient(white,grey,black);
-    color: #ffffff;
-    font-family: 'Sansita One', cursive;
-    font-weight: 500;
-    text-decoration: none;
-    text-transform: capitalize;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -webkit-box-shadow: 0px 15px 0px #001933, 0px 10px 25px rgba(50,100,250,.5);
-    -moz-box-shadow: 0px 15px 0px #001933, 0px 10px 25px rgba(50,100,250,.5);
-    box-shadow: 0px 15px 0px #001933, 0px 10px 25px rgba(50,100,250,.5);
-    margin: 50px auto;
-    border-color: #001933;
-    border-width: 10px;
-    border-radius: 40px 100px 100px 100px;
-    padding: 20px;
-}
-
-.big-button:active {
-    box-shadow: 0px 3px 0px yellow, 0px 3px 6px rgba(50,100,250,.5);
-    position: relative;
-    top: 10px;
-}
-
-.shadow:active {
-    box-shadow: 0px 3px 0px #001933, 0px 3px 6px rgba(50,100,250,.5);
-    position: relative;
-    top: 40px;
 }
 .navigationMobile{
     background-color: rgba(10,10,10,0.6);
@@ -535,9 +1138,8 @@ label{
     width:100%;
     height:100%;
     display:none;
-    z-index: 7;
+    z-index: 1001;
 }
-
 .navigationAlt{
     position: absolute;
     padding:20px;
@@ -546,20 +1148,131 @@ label{
     right:0;
     background-color: black;
 }
-
 .headingText{
     color: black;
-    font-family: 'Ribeye Marrow', cursive;
-    font-size:60px;
+    font-family: 'Cabin Sketch', cursive;
+    font-size:50px;
+    font-weight: bolder;
 }
-
-.progress{
-
-}
-
-.bannerText{
+.bannerText, .barText{
     position: absolute;
     color: white;
     text-shadow: 10px 10px 10px red;
     font-family: 'Stalinist One', cursive;
+}
+.myPhoto{
+    position: relative;
+    margin: 0 auto;
+}
+#myIMG{
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 130px;
+    border: 3px solid black;
+    box-shadow:0 30px 70px 10px grey;
+}
+.containerBut {
+    width: 300px;
+    height: 120px;
+    margin-bottom:10%;
+    margin-left:auto;
+    margin-right:auto;
+    color: white;
+    font-size: 1rem;
+    z-index: 1000;
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+}
+.containerBut:hover{
+    width:300px;
+    height:120px;
+}
+p {
+    text-align: center;
+    font-size:22px;
+}
+.footP{
+    text-align: left;
+
+}
+.projects{
+    width:100%;
+}
+.button {
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 100px;
+    padding: 5px;
+    margin: 0 auto;
+    color: black;
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.icon {
+    position: relative;
+    margin:0 auto;
+    text-align: center;
+}
+.button:hover {
+    border: 4px solid darkgreen;
+    background: -webkit-radial-gradient(lightgreen,limegreen,forestgreen);
+    box-shadow: 0px 70px 60px rgba(0, 0, 0, 0.2);
+    transition: .3s;
+    color: white;
+}
+.button:active {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.05s;
+}
+.skillPhoto{
+    box-shadow: 0 10px 20px 1px grey;
+    border-top-right-radius: 150px;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 250px;
+    border-bottom-right-radius: 250px;
+}
+#circle1, #circle2, #circle3, #circle4, #circle5, #circle6, #circle7, #circle8, #circle9, #circle10, #circle11, #circle12{
+    display:none;
+    height:150px;
+    margin: 20px 0;
+    font-family: 'Permanent Marker', cursive;
+}
+.mobileBar{
+    position: fixed;
+    top:0;
+    padding: 10px;
+    background: rgba(10,10,10,0.9);
+    width:100%;
+    z-index:2000;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.mobile{
+    position: fixed;
+    top:0;
+}
+#mobile1{
+    cursor: pointer;
+    color:rgba(250,250,150,0.5);
+}
+#mobile2{
+    cursor: pointer;
+    color:rgba(250,250,150,0.5);
+    display:none;
+}
+.info{
+    width: 1900px;
+    background-color: black;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+h1{
+    color:white;
+}
+.infoP{
+    text-align: justify;
+    color:white;
+    box-sizing: content-box;
+}
+.footP{
+    font-size: 15px;
 }

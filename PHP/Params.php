@@ -1,8 +1,8 @@
 <?php
 
-$host = 'userdb1';
-$user = '1143238_ZsE';
-$password='JFsr6059b68DC8';
-$db_name= '1143238_ZsE';
+$host = 'sql.5v.pl';
+$user = 'db-user29539';
+$password='portfolio94';
+$db_name= 'db-user29539';
 
 ?>
