@@ -339,9 +339,7 @@
                         </div>
                     <div id="infoBmi" class="info">
                         <h1>SportLife</h1>
-                        <p class="infoP">Aplikacja internetowa poświęcona tematyce kulturystyki oraz dobrego odżywiania. Użytkownik ma możliwośc obliczenia swojego zapotrzebowania kalorycznego, zarchiwizowac swoje obliczenia, a także dodac konkretny trening oraz zbilansowaną diete na dany dzien miesiąca. Strona będzie rozbudowaywana o dodatkowe funkcje , między innymi kalkulator BMI oraz bazę danych z popularnymi srodkami spożywczymi oraz ich makroskładnikami. </p>
-                        <p class="infoP">Użyte technologie: HTML,CSS,PHP,JavaScript, AngularJS, RWD, BootStrap</p>
-                    </div>
+                             </div>
                         <div id="imgProject2" class="project col-md-6 col-sm-12 text-center">
                             <div class="hover" id="hover2">
                                 <a href="http://shopbox.5v.pl/" >
